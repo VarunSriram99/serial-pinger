@@ -1,5 +1,5 @@
 <% branch_name = `git symbolic-ref HEAD 2>/dev/null`.chomp.sub('refs/heads/', '') %>
-<% puts 'repo=#{`git rev-parse --show-toplevel`}'%>
+<% puts `git rev-parse --show-toplevel`%>
 <% repository_name = `git rev-parse --show-toplevel`.split('/').last.strip %>
 
 default: &default
