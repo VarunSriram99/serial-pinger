@@ -42,9 +42,6 @@
       }
     },
     {
-      "plan": "heroku-redis:hobby-dev"
-    },
-    {
       "plan": "bonsai:sandbox-6"
     }
   ],
