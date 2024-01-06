@@ -1,0 +1,12 @@
+{
+  "name": "serial-pinger",
+  "version": "1.0.0",
+  "repository": "https://github.com/VarunSriram99/serial-pinger.git",
+  "author": "S Varun <s.varun@bigbinary.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "18.12",
+    "npm": "9.x",
+    "yarn": "1.22.x"
+  }
+}
