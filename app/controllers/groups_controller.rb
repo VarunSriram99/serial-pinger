@@ -6,12 +6,13 @@ class GroupsController < ApplicationController
   end
 
   def create
-    Group.create(person_params)
+    elements = person_params.text.split(' ')
+    Group.create(name: elements[0], members: elements.drop(1).join(' '))
   end
 
   private
 
   def person_params
-    params.require(:group).permit(:name, :members)
+    params.permit(:text)
   end
 end
