@@ -6,7 +6,7 @@ class GroupsController < ApplicationController
   end
 
   def create
-    elements = person_params.text.split(' ')
+    elements = person_params[:text].split(' ')
     Group.create(name: elements[0], members: elements.drop(1).join(' '))
   end
 
